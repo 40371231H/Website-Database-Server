@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
         'Content-Type': 'text/html'
     }
 
-    fs.readFile(filePath, 'utf8', (error, data) => {
+    fs.readFile(filePath, 'utf-8', (error, data) => {
         // 判斷讀檔是否出錯
         if (error) {
             console.log(filePath + '檔案不存在')
