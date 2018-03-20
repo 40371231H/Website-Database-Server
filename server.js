@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
         if (error) {
             console.log(filePath + '檔案不存在')
             res.writeHead(404, header)
-            res.write('<h1>404 找不到檔案</h1>')
+            res.write('<h1>404 Couldn\'t found file.</h1>')
             res.end()
             return
         }
